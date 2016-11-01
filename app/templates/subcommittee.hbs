@@ -1,5 +1,7 @@
 {{#each model.committees as |committee|}}
   <h2>Details for {{committee.name}}</h2>
+  <h4>Chamber: {{committee.chamber}}</h4>
+  <p>Committee ID number: {{committee.committee_id}}</p>
 {{/each}}
 <h2>Subcommittees</h2>
 {{#if model.subcommittees}}
