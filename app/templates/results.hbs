@@ -1,3 +1,8 @@
-<h1>Is this working?</h1>
+<h1>Legislators for {{'zip'}}</h1>
+<ul>
+{{#each model as |legislator|}}
+  {{legislator-detail legislator=legislator}}
+{{/each}}
+</ul>
 
-{{model}}
+{{#link-to 'index'}}<p>Back</p>{{/link-to}}
