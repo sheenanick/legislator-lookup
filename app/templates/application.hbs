@@ -1,6 +1,18 @@
-<div class="jumbotron">
-  <h1>ENLIGHTENED CITIZENS</h1>
+<div class="ui inverted menu">
+  <div class="item">
+    <h1>ENLIGHTENED CITIZENS</h1>
+  </div>
+  <div class="item">
+    {{#link-to 'index'}}Home{{/link-to}}
+  </div>
+  <div class="item">
+    {{#link-to 'committee'}}Committees{{/link-to}}
+  </div>
+  <div class="item">
+    {{#link-to 'bills'}}Bills{{/link-to}}
+  </div>
 </div>
+
 <div class="container">
-{{outlet}}
+  {{outlet}}
 </div>
