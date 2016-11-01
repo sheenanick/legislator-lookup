@@ -1,0 +1,8 @@
+<h2> Details for  {{model.name}}</h2>
+
+<h2>Subcommittees</h2>
+{{#each model as |subcommittee|}}
+  <ul>
+    {{subcommittee-tile subcommittee=subcommittee}}
+  </ul>
+{{/each}}

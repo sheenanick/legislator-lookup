@@ -1,0 +1,14 @@
+<select onchange={{action 'filter' value="target.value"}}>
+  <option value="all">All</option>
+  <option value="house">House</option>
+  <option value="senate">Senate</option>
+  <option value="joint">Joint</option>
+</select>
+
+<ul>
+  {{#each committees as |committee|}}
+  <li class="well" >
+    {{#link-to 'subcommittee' committee.committee_id}}<h4>{{committee.name}}</h4>{{/link-to}}
+  </li>
+{{/each}}
+</ul>
