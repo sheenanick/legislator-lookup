@@ -17,13 +17,6 @@ module.exports = function(environment) {
       }
     },
 
-    firebase: {
-      apiKey: "AIzaSyBkjlky21t8a2fu1iL3NbSoonq26Fe2NZM",
-      authDomain: "legislator-lookup-96d68.firebaseapp.com",
-      databaseURL: "https://legislator-lookup-96d68.firebaseio.com",
-      storageBucket: "legislator-lookup-96d68.appspot.com"
-    },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
