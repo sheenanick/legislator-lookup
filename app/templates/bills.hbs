@@ -1,5 +1,6 @@
+<h2 id="billTitle">Bills</h2>
 <ul>
   {{#each model as |bill|}}
-    <li class="well">{{bill.official_title}}</li>
+    {{#link-to 'billid' bill.bill_id}}<li class="well">{{bill.official_title}}</li>{{/link-to}}
   {{/each}}
 </ul>

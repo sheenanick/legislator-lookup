@@ -5,3 +5,7 @@ li {
 .ui.inverted.menu {
   background-color: #012256;
 }
+
+#billTitle {
+  text-align: center;
+}

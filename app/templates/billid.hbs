@@ -1,0 +1,10 @@
+{{#each model as |bill|}}
+  <h3>{{bill.official_title}}</h3>
+  <h5>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h5>
+  <h5>Date Introduced: {{bill.introduced_on}}</h5>
+  <h5>Latest version: <a href={{bill.last_version.urls.html}} target="_blank">html</a>, <a href={{bill.last_version.urls.pdf}} target="_blank">pdf</a></h5>
+  <h5>Committee(s):</h5>
+  {{#each bill.committee_ids as |url|}}
+  <a href="/committee/{{url}}">{{url}}</a> |
+  {{/each}}
+{{/each}}

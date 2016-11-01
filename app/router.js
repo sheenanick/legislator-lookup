@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('committee');
   this.route('subcommittee', {path: '/committee/:committee_id'});
   this.route('bills');
+  this.route('billid', {path: 'bills/:bill_id'});
 });
 
 export default Router;

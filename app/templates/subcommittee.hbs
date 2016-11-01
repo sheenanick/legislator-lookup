@@ -1,8 +1,13 @@
-<h2> Details for  {{model.name}}</h2>
-
-<h2>Subcommittees</h2>
-{{#each model as |subcommittee|}}
-  <ul>
-    {{subcommittee-tile subcommittee=subcommittee}}
-  </ul>
+{{#each model.committees as |committee|}}
+  <h2>Details for {{committee.name}}</h2>
 {{/each}}
+<h2>Subcommittees</h2>
+{{#if model.subcommittees}}
+  {{#each model.subcommittees as |subcommittee|}}
+    <ul>
+      {{subcommittee-tile subcommittee=subcommittee}}
+    </ul>
+  {{/each}}
+{{else}}
+  <p>no subcommittees</p>
+{{/if}}
